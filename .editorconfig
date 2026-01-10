@@ -1,0 +1,18 @@
+root = true
+
+# 所有 C++ 源文件和头文件使用 UTF-8 带 BOM
+[*.cpp]
+charset = utf-8-bom
+
+[*.h]
+charset = utf-8-bom
+
+# 其他文件保持默认编码（可选）
+[*.ui]
+charset = utf-8
+
+[*.qrc]
+charset = utf-8
+
+[*.txt]
+charset = utf-8
