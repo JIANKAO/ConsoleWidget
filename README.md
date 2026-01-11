@@ -1,1 +1,3 @@
 # ConsoleWidget
+这个模块是我在应用中反复实践得到的产物，个人认为比内置的指令门槛要低，支持自定义解释，相当于输入法。
+如果你要用的话请想好怎么管理它的显示周期，你可以把ConsoleWidget替换为你的主体，也可以把它作为独立的模块用ICommandReceiver作为基类借助CommandBus::instance().registerReceiver() 把你的各个模块连接起来
