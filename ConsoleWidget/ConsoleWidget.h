@@ -1,7 +1,6 @@
 ﻿#pragma once
 
 #include <QtWidgets/QWidget>
-//#include "ui_ConsoleWidget.h"
 #include "IMEController.h"
 #include "CommandIMEWidget.h"
 #include <QLineEdit>
@@ -14,8 +13,6 @@ public:
 	ConsoleWidget(QWidget* parent = nullptr);
 	~ConsoleWidget();
 
-private:
-	//Ui::ConsoleWidgetClass ui;
 protected:
 	bool eventFilter(QObject* obj, QEvent* event) override;
 

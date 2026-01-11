@@ -5,7 +5,6 @@
 ConsoleWidget::ConsoleWidget(QWidget *parent)
     : QWidget(parent)
 {
-    //ui.setupUi(this);
     // 整体布局
     auto* layout = new QVBoxLayout(this);
     layout->setContentsMargins(10, 10, 10, 10);

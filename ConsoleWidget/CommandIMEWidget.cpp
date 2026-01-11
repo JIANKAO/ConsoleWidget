@@ -19,6 +19,8 @@ CommandIMEWidget::CommandIMEWidget(QWidget* parent)
 
     // 上行：解释文本
     m_explanationLabel = new QLabel(this);
+    m_explanationLabel->setWordWrap(true); // 支持多行自动换行
+    m_explanationLabel->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Minimum);
     m_explanationLabel->setStyleSheet("color: rgba(255,255,255,220); font-size: 13px;");
     layout->addWidget(m_explanationLabel);
 
@@ -29,7 +31,8 @@ CommandIMEWidget::CommandIMEWidget(QWidget* parent)
     m_candidateLayout->setSpacing(6);
     layout->addWidget(m_candidateArea);
 
-    setFixedHeight(70); // 初步固定高度，后续可调整
+    //setFixedHeight(70); // 初步固定高度，后续可调整
+	resize(200, 70);
 }
 
 void CommandIMEWidget::setController(IMEController* controller)
